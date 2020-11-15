@@ -1,0 +1,673 @@
+/*start*/
+
+*{
+  box-sizing: border-box; /*عشان ميحسبشالهوامش وينزل سطر جديد لما اجى اعمل padding*/ 
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    
+}
+
+.clearfix { /* بعد اى فلوت عشان يظبط الى تحته*/ 
+    clear: both;
+}
+/*header*/
+.header .slider{
+    background-image: url(images/es.jpg);
+    background-size: cover;/* عشان الخلفيه تيجى جو الديف بالظبط وتكون مرنه*/
+    height: 600px;
+    
+}
+
+.header .slider .intro {
+    padding-top: 200px;
+    height:600px;
+    text-align: center;
+    color: #fff; 
+}
+
+.header .slider .intro h2 {
+    margin: 0 auto;
+    font-size: 50px;
+    width: 300px;
+    border-top: 4px solid #fff;;
+    border-bottom: 4px solid #fff;
+    padding: 5px 0;
+} 
+
+.header .slider .intro button {
+   background: none;
+   margin-top: 30px;
+   font-size: 20px;
+   border: 2px solid #fff;
+   font-weight: bold;
+   padding: 10px 30px;
+}
+
+.header .navbar {
+    background-color: #252f31;
+    color: #fff;
+    overflow: hidden;
+    
+    
+}
+
+.header .navbar h2 {
+    float: left;
+    
+}
+
+.header .navbar h2 span{
+    color: #2ecc71;
+}
+
+
+.header .navbar ul {
+    list-style-type: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+}
+
+
+
+.header .navbar ul li {
+    float: left;
+    padding: 10px;
+    
+}
+
+.header .navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+      
+}
+
+.header .navbar ul li.active a,
+.header .navbar ul li a:hover {
+    color: #30b576;
+}
+
+/*start features*/
+
+.features{
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.features .feat {
+    float: left;
+    width: 33.33333%;
+    height: 150px;
+}
+
+@media only screen and (max-width: 767px){
+    .features .feat{
+        float: left;
+        width: 33.3%;
+        height: 150px;
+    }
+}
+
+.features .feat h2{
+    color: #555;
+}
+
+.features .feat p {
+    line-height: 1.7;/*عشان احط طول السطر الى الكلام هياخده*/
+    color: #888;
+    /*text-align: justify; بتبقا تظبط الكلام الى فى البرجرفات ساعات وسعات لا*/
+    padding: 0 20px 0 0;
+}
+
+/*atart about me*/
+
+.about-me{
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.about-me .image {
+    float: left;
+    width: 40%;  
+}
+
+.about-me .image img{ /*عشان تملاالديف الى هى جوه*/
+    width: 100%;
+}
+
+.about-me .info {
+    float: left;
+    width: 60%;
+   
+}
+
+.about-me .info h2{
+    margin: 25px 0 20px 40px;
+    color: #555;
+   
+}
+
+.about-me .info > p {  /* > ‘شان يعمل لده بس مش لكل برجرافات الصفحه*/
+    margin: 0 0 10px 40px;
+    
+}
+
+.about-me .info p {  /* > دهيطبق على كله عادى*/
+    line-height: 1.6;
+    color: #666;
+}
+
+.about-me .info > p:lastof-type {
+    margin-top: 25px;
+    
+}
+
+.about-me .info .hobbies{
+    overflow: hidden;
+    margin: 15px 0 0 40px;
+      
+}
+ 
+
+.about-me .info .hobbies .content {
+    float: left;
+    width: 50%;
+    min-height: 100px;
+    overflow: hidden;
+      
+}
+
+.about-me .info .hobbies .content h3 {
+    color: #555;
+      
+}
+
+.about-me .info .hobbies .content .icon {
+    float: left;
+    width: 12%;
+    margin-right: 5%;
+      
+}
+
+/* .about-me .info .hobbies .content .icon img {
+    max-width: 100%; /*عشان حجم يصغر على اد الديف
+    margin: 40px 10px 0 0;
+} */
+
+.about-me .info .hobbies .content .icon i {
+    color: #30b576;
+    margin-top: 30px;
+}
+
+
+.about-me .info .hobbies .content .text {
+    float: left;
+    width: 81%;
+    margin-right: 2%;
+      
+}
+
+.about-me .info .hobbies .content .text p {
+    margin-top: 0;      
+}
+
+.about-me .info .hobbies .content .text h3 {
+    margin-bottom: 5px;
+}
+ 
+/*start myskilss*/
+
+.my-skills {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    
+    
+}
+
+.my-skills .skills,
+.my-skills .progress
+{
+    width: 50%;
+    float: left;
+    
+}
+
+
+
+.my-skills .skills h2{
+    margin: 25px 0 20px 40px;
+    color: #555;
+   
+}
+
+
+.my-skills .skills p {  
+    line-height: 1.6;
+    color: #666;
+    margin: 0 0 10px 40px;
+}
+
+.my-skills .skills > p:lastof-type {
+    margin-top: 25px;
+    
+}
+
+.my-skills .skills button {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.my-skills .progress .tech { margin-left: 50px}
+.my-skills .progress .tech h3 {
+    color: #555;
+      
+}
+
+.my-skills .progress .tech div {
+   background-color: #f2f2f2;
+   height: 25px;  
+}
+
+.my-skills .progress .tech div span {
+   background-color: #2dcc70;
+   height: 25px; 
+   display: block; /*عشان يتعمل لوحده ويظهر على الديف*/
+   line-height: 25px; /*عشان طول الكلمه ياخد ارتفاع الديف كله ويظبط فى النص*/
+   text-align: right;
+   color: #fff;
+   font-weight: bold;
+}
+
+/*start resume*/
+.resume {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.resume h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #666; 
+}
+
+.resume p {
+    line-height: 1.7;
+    color: #666;
+    padding: 0 40px;  
+}
+
+.resume button{
+    margin-top: 15px;
+}
+
+
+
+/*start education*/
+.my-education {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.my-education hr
+{
+    margin: 20px 0;
+    background-color: #999;
+    height: 1px;
+    border: 0;
+}
+
+.my-education .main{
+    width: 50%;
+    margin-right: 5%;
+    float: left;
+    
+}   
+
+
+.my-education .main h2{
+    margin: 25px 0 20px 40px;
+    color: #555;
+   
+}
+
+
+.my-education .main p {  
+    line-height: 1.6;
+    color: #666;
+    margin: 0 0 10px 40px;
+}
+
+.my-education .mai n > p:lastof-type {
+    margin-top: 25px;
+    
+}
+
+.my-education .exp
+{
+    width: 45%;
+    float: left;
+    
+}
+
+.my-education .exp h3
+{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    
+}
+
+.my-education .exp span
+{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.my-education .exp span:first-of-type
+{
+    color: #999;
+    
+}
+
+.my-education .exp span:last-of-type
+{
+    color: #fff;
+    background-color: #2dcc70;
+    display: inline-block;
+    padding: 4px 10px;
+    
+}
+
+
+
+.my-education .exp p
+{
+    line-height: 1.7;
+    color: #777  ;
+}
+
+/*start testimonials*/
+.testimonials  {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.testimonials q {
+    line-height: 1.8;
+    color: #888;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.testimonials h3 {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.testimonials ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    
+}
+
+
+
+.testimonials ul li {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2dcc70;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.testimonials ul li.active {
+    background-color: #2dcc70;
+}
+
+.testimonials ul li:hover {
+    background-color: #2dcc70;
+}
+
+/*start portfolio*/
+
+.portfolio  {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+
+} 
+
+.portfolio h2 {
+  color: #777;  
+
+}
+
+.portfolio p {
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 30px; 
+}
+
+
+.portfolio .ourwork {
+    overflow: hidden
+
+}
+
+.portfolio .ourwork >div {
+    float: left;
+    width: 33.333333;
+    margin-bottom: 10px;
+
+}
+
+.portfolio .ourwork > div img{
+    width: 92%;
+    margin: 10px;
+    padding: 3px;
+    background-color: #fff; 
+    border:1px solid #ccc;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+
+/*start contact me*/
+
+
+.contact {
+    background-color: #252f31;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.contact .info {
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+}
+
+.contact h2 {
+    color: #fff;
+    margin-left: 40px;
+    
+}
+
+.contact p{
+    color: #6a6e71;
+    margin-left: 40px;
+    line-height: 1.7;
+}
+
+.contact p strong {
+    color: #d1d6da;
+}
+
+.contact .form {
+    width: 45%;
+    float: left;
+    margin-left: 
+}
+
+.contact .form label {
+    display: block; /* عشان تاخد سطر لوحدها*/
+    color: #d1d6da;
+    margin: 10px 0;
+   
+}
+
+.contact .form input[type="text"],
+.contact .form input[type="email"] {
+    background-color: #4b5557;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px; 
+}
+
+.contact .form textarea {
+    background-color: #4b5557;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+
+.contact .form input[type="submit"] {
+    background-color: #191e22;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+}
+
+
+
+/*start footer*/
+
+.footer {
+    background-color: #191e22;
+    color: #6a6e71;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer span {float: left;}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    float: right;
+}
+
+.footer ul li{
+    display: inline-block; /*عشان يجواجمب بعض*/
+    
+}
+
+.footer ul li i {
+    color: #6a6e71;
+    
+}
+
+.footer ul li i:hover {
+    color: #fff;
+    
+}
+
+/*start framework*/
+/*هحط فيه الحاجات الى هستخدمها اكترمن مره*/
+
+.my-button {
+    background: none;
+    border: 3px solid #2dcc70;
+    padding: 10px 30px;
+    font-weight: bold;
+    
+}
+
+
+/*start responsize*/
+
+
+@media (max-width:767px) {
+    .header .slider .intro {
+        width: 100%;
+        text-align: center;
+    }
+    
+
+     
+    
+
+    
+    /*.header .slider .intro button {
+        margin-right: 250px;
+    }*/
+    
+    .header .navbar li { 
+        width: 30%;
+        float: none;
+    }
+    
+    .portfolio .ourwork >div {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+
+    }
+    
+    
+    
+     
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .portfolio .ourwork >div {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 766px){
+
+    .header .slider .intro h2 {
+        width: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 360px){
+
+    .header .slider .intro h2 {
+        width: 200px;
+    }
+    
+}
+
+
+/*end*/
