@@ -106,13 +106,7 @@
     height: 150px;
 }
 
-@media only screen and (max-width: 767px){
-    .features .feat{
-        float: left;
-        width: 33.3%;
-        height: 150px;
-    }
-}
+
 
 .features .feat h2{
     color: #555;
@@ -155,7 +149,7 @@
 
 .about-me .info > p {  /* > ‘شان يعمل لده بس مش لكل برجرافات الصفحه*/
     margin: 0 0 10px 40px;
-    
+
 }
 
 .about-me .info p {  /* > دهيطبق على كله عادى*/
@@ -347,7 +341,7 @@
     margin: 0 0 10px 40px;
 }
 
-.my-education .mai n > p:lastof-type {
+.my-education .main > p:lastof-type {
     margin-top: 25px;
     
 }
@@ -521,7 +515,7 @@
 .contact .form {
     width: 45%;
     float: left;
-    margin-left: 
+    margin-left: 20px;
 }
 
 .contact .form label {
@@ -653,21 +647,159 @@
     }
 }
 
-@media screen and (min-width: 450px) and (max-width: 766px){
+@media screen and (max-width: 766px){
 
     .header .slider .intro h2 {
         width: 250px;
     }
-    
-}
 
-@media screen and (max-width: 360px){
+    .header .navbar h2 {
+        width: 100%;
+        text-align: center;   
+    }
 
-    .header .slider .intro h2 {
-        width: 200px;
+    .header .navbar ul{
+        text-align: center;
+    }
+    .header .navbar ul li {
+        float: left;
+        width: 50%;
+        
+    }
+
+    .features .feat {
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .features .feat p {
+        padding: 15px;
     }
     
+    .about-me .image {
+        float: none;
+        width: 100%;
+        text-align: center;  
+    }
+    /*لازم اديها 100 فى الميه عشان تجيى فى نص الميه دول امال الى بيكبر الحجم font size*/
+
+    .about-me .info {
+        float: none;
+        width: 100%;
+    }
+    .about-me .info h2 {
+        width: 100%;  
+        text-align: center;
+        margin: 25px 0 20px 0px;
+        
+    }
+
+    .about-me .info p { 
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .about-me .info .hobbies .content {
+        float: none;
+        width: 100%;
+        
+    }
+
+    .about-me .info .hobbies .content h3{
+        width: 100%;
+        text-align: center;
+          
+    }
+
+    .my-skills .skills,
+    .my-skills .progress
+    {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+
+    .my-skills .skills h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+    .my-skills .skills p {
+        text-align: center;
+        margin-left: 0;
+        padding: 0 15px 0;
+    }
+    .my-skills .skills button {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .my-skills .progress .tech { margin: 10px}
+    .my-skills .progress .tech h3 {
+        text-align: center;
+    }
+    .my-education {
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .my-education .main {
+        width: 100%;
+    }
+    .my-education .main h2{
+        margin-left: 0;
+    }
+
+    .my-education .main p{
+        margin: 0 0 50px;
+    }
+
+    .my-education .exp {
+        width: 100%;
+        float: none;
+    
+    }
+    .my-education .exp h3 {
+        margin-top: 50px;
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact .info {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .contact h2 {
+        margin-left: 0;
+    }
+    .contact p {
+        margin-left: 0;
+    }
+    .contact .form {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+    .footer span {
+        float: none;
+        margin-bottom: 5px;
+    }
+    .footer ul {
+        float: none;
+        margin-top: 10px;
+    }
 }
+
 
 
 /*end*/
