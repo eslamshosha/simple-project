@@ -611,11 +611,6 @@
         text-align: center;
     }
     
-
-     
-    
-
-    
     /*.header .slider .intro button {
         margin-right: 250px;
     }*/
@@ -675,6 +670,7 @@
     }
     .features .feat p {
         padding: 15px;
+        margin: -20px 0;
     }
     
     .about-me .image {
@@ -797,6 +793,10 @@
     .footer ul {
         float: none;
         margin-top: 10px;
+    }
+
+    p {
+        padding: 15px;
     }
 }
 
